@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elective I form</title>
+    </head>
+    <body>
+        <h1>Elective I form</h1>
+        <h3>Please fill up the form ASAP</h3>
+        <form action=" " method="GET">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br><br>
+
+            <label for="roll number">Roll number:</label>
+            <input type="number" min=1 max=96 id="roll num" required><br><br>
+
+            <label for="name">Email:</label>
+            <input type="email" id="name" placeholder="sample@gmail.com"><br><br>
+
+            <label for="Phone number">Phone number:</label>
+            <input type="tel" id="Phone number" placeholder="977-0000000000" pattern="[0-9]-{3}-[0-9]{10}"><br><br>
+
+            <label for="date">Date of filling form:</label>
+            <input type="date" id="date"><br><br>
+
+            <label for="elective">Choose your preferred elective</label><br>
+            <input type="radio" id="elective">Advanced Python<br>
+            <input type="radio" id="elective">Java Programming<br>
+            <input type="radio" id="elective">Quantum Computing<br>
+            <input type="radio" id="elective">Compiler Design<br>
+            <br>
+            
+            <label for="rate">How likely are you sure about your choice?(0-min, 10-max):</label><br>
+            <input type="number" id="rate" min="0" max="10" value="10"><br><br>
+    
+            <label for="reason">Why are you choosing this?</label>
+            <select>
+                <option>Peer Pressure</option>
+                <option>Full interest</option>
+                <option>Because it is easy</option>
+                <option>No other choice</option>
+            </select>
+            <br><br>
+
+            <label for="checkbox">I am fully responsible for my choice:</label>
+            <input type="checkbox" id="checkbox">Yes,I am!<br><br>
+
+            <label for="suggestion">Give suggestions(if any)</label>
+            <textarea rows="2" cols="25"></textarea><br><br>
+
+            <input type="Reset">
+            <input type="Submit">
+        </form>
+    </body>
+</html>
