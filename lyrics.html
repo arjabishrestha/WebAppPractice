@@ -2,9 +2,20 @@
 <html>
     <head>
         <title> Lyrics of song</title>
+         <script>
+            function dosth(){
+                document.getElementById("subscribe").innerHTML="Thank you for subscribing"
+            }
+        </script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Mitho Sapana</h1>
+        <header style="background-color: beige; border-radius:5px; text-align: center;">
+            <h1>Prajina</h1>
+            <h6>Nepali song artist</h6>
+            <img id="prajinaphoto" target="_blank" height=150px width=200px src="https://assets-cdn.kathmandupost.com/uploads/source/news/2024/third-party/mainphotoprajina-1720405968.jpg">
+        </header>
+        <h1 id="title">Mitho Sapana</h1>
         <h3>By Prajina</h3>
         <audio controls loops>
             <source src="listentomithosapana.mp3">
@@ -17,7 +28,6 @@
                 <dt><u>Mitho Sapana</u></dt>
                 <dd>It means good dreams. It is a love song.</dd>
             </dl>
-        <a href="https://www.youtube.com/channel/UCI6WIV0LJJVyFpI6vVMuwPg"><img target="_blank" title="Opens Channel of Prajina" height=150px width=200px src="https://assets-cdn.kathmandupost.com/uploads/source/news/2024/third-party/mainphotoprajina-1720405968.jpg"></a>
         <hr>
         <pre>
             Timi Nidari Ma Aauchau
@@ -85,23 +95,37 @@
             </a>
         </p>
         <hr>
-        <h4><mark>Other songs of Prajina:</mark></h4>
-        <ul>
-            <li>Kina Bhanenau</li>
-            <li>Game Over</li>
-            <li>Kina Bhanenau</li>
-            <li>Hami</li>
-            <li>Yo sahar</li>
-        </ul>
-        <h4><u>Based on rating </u></h4>
-        <ol>
-            <li>Yo sahar</li>
-            <li>Hami</li>
-            <li>Mitho Sapana</li>
-            <li>Kina Bhanenau</li>
-            <li>Game over</li>
-        </ol>
-        <hr>
+        <div id="about">
+            Prajina Lamichhane is a Nepali 
+            singer-songwriter known for her soulful and heartfelt music.
+             She began her music career in 2021 with her EP "Nineteen," which 
+             focused on mental health and personal feelings. Her popular songs 
+             like "Yo Sahar" and "Hami" have touched many people, showcasing her 
+             emotional depth and relatable themes. Prajina's creative process is marked by 
+             her ability to blend meaningful lyrics with captivating melodies, making her a 
+             versatile artist.Music has always been a vital part of Prajina’s life—a way to release
+             emotions and make sense of the world. As a school student, her singing performances drew 
+             praise, fueling her desire to write her own songs. She penned her first track in Grade 9 
+             with two best friends, inspired by their shared love for Justin Bieber and pop music. That 
+             first creative spark set her on a path where she would go on to write hundreds of songs.
+        </div>
+            <h4><mark>Other songs of Prajina:</mark></h4>
+            <ul id="l1" class="list1">
+                <li>Kina Bhanenau</li>
+                <li>Game Over</li>
+                <li>Kina Bhanenau</li>
+                <li>Hami</li>
+                <li>Yo sahar</li>
+            </ul>
+            <h4><u>Based on rating </u></h4>
+            <ol id="l2" class="list1">
+                <li>Yo sahar</li>
+                <li>Hami</li>
+                <li>Mitho Sapana</li>
+                <li>Kina Bhanenau</li>
+                <li>Game over</li>
+            </ol>
+            <hr>
         <h4>Table showing songs and youtube views</h4>
         <h6>As of December 2025</h6>
         <table align="center" border="2px">
@@ -147,16 +171,15 @@
             </button>
         </a>
         <br>
-        <p>Please Subscribe:
-        <button onclick="dosth()" background-color:red;">
-            Subscribe
-        </button>
-        <p id="subscribe">      </p>
-        <hr>
-        <script>
-            function dosth(){
-                document.getElementById("subscribe").innerHTML="Thank you for subscribing"
-            }
-        </script>
+        <div id="last">Love from Prajina</div>
+        <footer style="background-color:beige; text-align: center;">
+            <p>email:<a href="mailto:prajinalami@yahoo.com">prajinalami@yahoo.com</a></p>
+            <a href="https://www.youtube.com/channel/UCI6WIV0LJJVyFpI6vVMuwPg"><button>Go to channel</button></a>
+            <p>Please Subscribe:
+            <button onclick="dosth()" background-color:red;">
+                Subscribe
+            </button>
+            <p id="subscribe">      </p>
+        </footer>
     </body>
 </html>

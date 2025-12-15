@@ -6,7 +6,7 @@
     <body>
         <h1>Elective I form</h1>
         <h3>Please fill up the form ASAP</h3>
-        <form action=" " method="GET">
+        <form action=" " method="GET" enctype="multipart/form-data">
             <label for="name">Name:</label>
             <input type="text" id="name" required><br><br>
 
@@ -17,7 +17,10 @@
             <input type="email" id="name" placeholder="sample@gmail.com"><br><br>
 
             <label for="Phone number">Phone number:</label>
-            <input type="tel" id="Phone number" placeholder="977-0000000000" pattern="[0-9]-{3}-[0-9]{10}"><br><br>
+            <input type="tel" id="Phone number" placeholder="977-0000000000" pattern="[0-9]{3}-[0-9]{10}"><br><br>
+
+            <label for="photo">Add your photo(formal)</label>
+            <input type="file" accept="image/jpg, image/png"></textarea><br><br>
 
             <label for="date">Date of filling form:</label>
             <input type="date" id="date"><br><br>
@@ -42,7 +45,7 @@
             <br><br>
 
             <label for="checkbox">I am fully responsible for my choice:</label>
-            <input type="checkbox" id="checkbox">Yes,I am!<br><br>
+            <input type="checkbox" id="checkbox" required>Yes,I am!<br><br>
 
             <label for="suggestion">Give suggestions(if any)</label>
             <textarea rows="2" cols="25"></textarea><br><br>
