@@ -59,3 +59,54 @@ hero button{
     color: rgb(241, 221, 244) ;
     background-color:rgb(225, 135, 229) ;
 }
+#week{
+    text-align: center;
+    background-color: rgb(252, 252, 252) ;
+    margin-bottom: 5px;
+    padding: 3px;
+    color: rgb(176, 140, 179);
+    font-size: 22px;
+    text-decoration: underline;
+}
+.card {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 15px;
+}
+.day{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(252, 252, 252);
+    border-radius: 8px;
+    flex: 1;
+}
+.day img{
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 4px;
+}
+.daydesc {
+  color: rgb(225, 135, 229);
+  border-radius: 10px;
+}
+.daydesc h4{
+    font-size: 30px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+.semblock{
+    background-color: rgb(176, 140, 179);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 1000px;
+}
+.semblock h3{
+    font-size: 30px;
+    padding:0px;
+    text-align: center;
+    color: rgb(252, 252, 252)
+}
