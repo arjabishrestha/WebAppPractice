@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        #guessdiv{
+            text-align: center;
+            background-color: beige;
+            padding: 50px;
+        }
+        #guessno{
+            font-size: 50px;
+        }
+        #numsubmit{
+            font-size: 25px;
+            background-color: aliceblue;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guessing Game</h1>
+    <p>Rules:
+        <ol>
+            <li>You should guess a number between 0 and 100</li>
+            <li>You should guess the number between the range as mentioned after each guess</li>
+            <li>You will have 5 guesses</li>
+            <li>The score will be based on the no of guesses you made before the correct guess</li>
+        </ol>
+    </p>
+    <div id="guessdiv">
+        <label for="guessno">Enter your guess</label><br><br>
+        <input type="number" id="guessno"><br><br>
+        <input type="submit" id="numsubmit">
+        <h2 id="hint" style="font-size:16px; border-style: groove;">Guess the number between 0 and 100</h2>
+        <script>
+            let max=100;
+            let min=0;
+            let numsubmit=document.getElementById("numsubmit");
+            let guessno=document.getElementById("guessno");
+            let randno=Math.floor(Math.random()*100)+1;
+            let hint=document.getElementById("hint");
+            console.log(randno);
+            let i=1
+            numsubmit.onclick= function(){
+                    let guess= Number(guessno.value);
+                    if (guess===randno){
+                        hint.textContent=`You have guessed it right in ${i} guess`
+                        numsubmit.disabled=true;
+                    }
+                    else if (guess<randno){
+                        min=guess
+                        hint.textContent=`Wrong guess! Guess between ${min} and ${max}`
+
+                    }
+                    else if (guess>randno){
+                        max=guess
+                        hint.textContent=`Wrong guess! Guess between ${min} and ${max}`
+                    }
+                    i++;
+                    if (i>5 && guess!=randno){
+                        hint.textContent=`Game over. The number is ${randno}`
+                        numsubmit.disabled=true;
+                    }
+                }
+        </script>
+    </div>
+</body>
+</html>

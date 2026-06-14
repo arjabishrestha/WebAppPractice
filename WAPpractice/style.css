@@ -62,3 +62,28 @@ body{
     background-size: contain;
     background-attachment: fixed;
 }
+#subscribed:hover{
+    background-color: red;
+}
+#gotochannel:hover{
+    font-size: 30px;
+}
+#gotochannel:visited{
+    background-color: black;
+}
+#title::first-letter{
+    font-size: 50px;
+    font-style: italic;
+}
+pre::first-line{
+    background-color: aquamarine;
+}
+pre::selection{
+    background-color: antiquewhite;
+}
+#l2 li:after{
+    content:"🥶"
+}
+#l1 li::marker{
+    content:"😋";
+}

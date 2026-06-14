@@ -1,0 +1,13 @@
+#countlabel{
+    display: block;
+    text-align: center;
+    font-size: 5em;
+}
+#buttondiv{
+    text-align: center;
+}
+#acstatus{
+    font-size: 20px;
+    color: rgb(15, 189, 131);
+
+}
